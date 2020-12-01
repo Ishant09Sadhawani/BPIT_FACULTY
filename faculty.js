@@ -47,7 +47,6 @@ function processfaculty(FacultyName,Qualifications,Experience,Interests,Publicat
     let Name1= path.join(Name,Name+".xlsx");
     let pData=[];
     if(fs.existsSync(Name1)){
-    // pData=require("./"+playerFilePath);
      pData=excelReader(Name1,Name)
      pData.push(profile);
     }else{
